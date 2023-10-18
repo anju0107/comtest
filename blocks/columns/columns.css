@@ -7,6 +7,11 @@
   width: 100%;
 }
 
+.help-section > div {
+  display: flex;
+  gap: 0;
+}
+
 .columns > div > div {
   order: 1;
 }
@@ -30,11 +35,6 @@
     flex: 1;
     order: unset;
   }
-}
-
-.help-section > div {
-  display: flex;
-  gap: 0;
 }
 
 .help-section > div div:first-child {
@@ -71,6 +71,30 @@
   font-size: 32px;
 }
 
+.help-section h3 a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.help-section h3 a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fc0;
+}
+
+.help-section .button-container a {
+  background-color: transparent;
+  border: 1px solid white;
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
 .help-section > div div:nth-child(2) li a {
   color: white;
   font-size: 16px;
@@ -105,20 +129,11 @@
   align-items: center;
   margin: 0;
 }
-.help-section h3 a {
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-}
+
 .help-section h3 strong::after {
   padding-left: 16px;
   content: "\203A";
   font-size: 30px;
-}
-
-.help-section h3 a:hover {
-  text-decoration: underline;
-  text-decoration-color: #fc0;
 }
 
 .help-section p {
@@ -126,79 +141,67 @@
   padding-left: 80px;
 }
 
-.help-section .button-container a {
-  background-color: transparent;
-  border: 1px solid white;
-  font-weight: 400;
-  font-size: 16px;
-  width: 100%;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 24px;
+.help-section > div div:first-child h3 strong::after {
+  content: none;
 }
+
+.help-section .button-container {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #4f4c4d;
+}
+
+/* HELP SECTION DESKTOP STYLES */
+@media (min-width: 768px) {
+  .help-section > div {
+    display: grid;
+    grid-template-areas:
+      "header header contact "
+      "links1 links1 contact"
+      "links1 links1 locate "
+      "links1 links1 locate ";
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .help-section > div div:nth-child(2) {
+    padding-left: 84px;
+    border-right: 1px solid #4f4c4d;
+    width: unset;
+  }
+
+  .help-section > div div:nth-child(2) ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding-right: 16px;
+  }
+
+  .help-section > div div:nth-child(2) li {
+    width: 48%;
+  }
+
+  .help-section > div div:first-child {
+    border-right: 1px solid #4f4c4d;
+  }
+
   .help-section > div div:first-child h3 strong::after {
-    content: none;
+    content: "\203A";
   }
 
-  .help-section .button-container {
-    padding-bottom: 24px;
-    border-bottom: 1px solid #4f4c4d;
+  .help-section > div div:nth-child(3) {
+    display: none;
   }
 
-  /* HELP SECTION DESKTOP STYLES */
-  @media (min-width: 768px) {
-    .help-section > div {
-      display: grid;
-      grid-template-areas:
-        "header header contact "
-        "links1 links1 contact"
-        "links1 links1 locate "
-        "links1 links1 locate ";
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .help-section > div div:nth-child(2) {
-      padding-left: 84px;
-      border-right: 1px solid #4f4c4d;
-      width: unset;
-    }
-
-    .help-section > div div:nth-child(2) ul {
-      display: flex;
-      flex-flow: row wrap;
-      margin: 0;
-      list-style-type: none;
-      padding-left: 0;
-      justify-content: space-between;
-      margin-bottom: 16px;
-      padding-right: 16px;
-    }
-
-    .help-section > div div:nth-child(2) li {
-      width: 48%;
-    }
-
-    .help-section > div div:first-child {
-      border-right: 1px solid #4f4c4d;
-    }
-
-    .help-section > div div:first-child h3 strong::after {
-      content: "\203A";
-    }
-
-    .help-section > div div:nth-child(3) {
-      display: none;
-    }
-
-    .help-section > div div:nth-child(4) {
-      margin-left: 16px;
-      padding-top: 0;
-    }
-    .help-section > div div:nth-child(5) {
-      margin-left: 16px;
-      padding-top: 0;
-    }
+  .help-section > div div:nth-child(4) {
+    margin-left: 16px;
+    padding-top: 0;
   }
 
+  .help-section > div div:nth-child(5) {
+    margin-left: 16px;
+    padding-top: 0;
+  }
+}
