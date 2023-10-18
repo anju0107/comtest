@@ -7,6 +7,11 @@
   width: 100%;
 }
 
+.help-section > div {
+  display: flex;
+  gap: 0;
+}
+
 .columns > div > div {
   order: 1;
 }
@@ -32,13 +37,7 @@
   }
 }
 
-
-.help-section > div {
- display: flex;
- gap: 0;
-}
-
-.help-section > div div:first-child{
+.help-section > div div:first-child {
   grid-area: header;
 }
 
@@ -46,12 +45,13 @@
   grid-area: links1;
   align-self: center;
   height: 100%;
-  width: 100%
-
+  width: 100%;
 }
+
 .help-section > div div:nth-child(2) ul {
-  padding-left: 0;
+  padding-left: 20px;
   padding-right: 16px;
+  margin-top: 0;
 }
 
 .help-section > div div:nth-child(2) li {
@@ -65,68 +65,16 @@
 .help-section > div div:nth-child(2) li:hover {
   border-bottom: 1px solid #fc0;
 }
-.help-section > div div:nth-child(2) li:after {
-  content:"\203A"; 
+
+.help-section > div div:nth-child(2) li::after {
+  content: "\203A";
   font-size: 32px;
 }
 
-.help-section > div div:nth-child(2) li a{
-  color: white;
-  font-size: 16px;
-  text-decoration: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-.help-section > div div:nth-child(4) {
-  grid-area: contact;
-  padding-bottom: 24px;
-  border-bottom:1px solid #4f4c4d;
-  padding-top: 24px;
-
-}
-.help-section > div div:nth-child(4) p{
-  /* border-bottom:1px solid #4f4c4d; */
-  /* padding-left: 16px; */
-}
-.help-section > div div:nth-child(5) {
-  grid-area: locate;
-  padding-top: 24px;
-}
-
-.help-section .icon-circle, .help-section .icon-callus, .help-section .icon-branch {
-  height: 64px;
-  width: 64px;
-  margin-right: 16px;
-}
-
-.help-section h3 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0;
-  margin-bottom: 16px;
-}
 .help-section h3 a {
   font-size: 20px;
   color: white;
   text-decoration: none;
-}
-.help-section h3 strong::after{
-  padding-left: 16px;
-  content:"\203A"; 
-  font-size: 30px;
-}
-.help-section > div div:first-child h3 strong:after{
-  content: none;
-}
-.help-section h3 a:hover {
-  text-decoration: underline;
-  text-decoration-color: #fc0;
-}
-
-.help-section p {
-  font-size: 16px;
-  padding-left: 80px;
 }
 
 .help-section .button-container a {
@@ -142,6 +90,61 @@
   margin-top: 24px;
 }
 
+.help-section h3 a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fc0;
+}
+
+.help-section > div div:nth-child(2) li a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.help-section > div div:nth-child(4) {
+  grid-area: contact;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #4f4c4d;
+  padding-top: 24px;
+}
+
+.help-section > div div:nth-child(5) {
+  grid-area: locate;
+  padding-top: 24px;
+}
+
+.help-section .icon-circle,
+.help-section .icon-callus,
+.help-section .icon-branch {
+  height: 64px;
+  width: 64px;
+  margin-right: 16px;
+}
+
+.help-section h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+
+.help-section h3 strong::after {
+  padding-left: 16px;
+  content: "\203A";
+  font-size: 30px;
+}
+
+.help-section p {
+  font-size: 16px;
+  padding-left: 80px;
+}
+
+.help-section > div div:first-child h3 strong::after {
+  content: none;
+}
+
 .help-section .button-container {
   padding-bottom: 24px;
   border-bottom: 1px solid #4f4c4d;
@@ -151,24 +154,23 @@
 @media (min-width: 768px) {
   .help-section > div {
     display: grid;
-    grid-template-areas: 
-    "header header contact "
-    "links1 links1 contact"
-    "links1 links1 locate "
-    "links1 links1 locate ";
+    grid-template-areas:
+      "header header contact "
+      "links1 links1 contact"
+      "links1 links1 locate "
+      "links1 links1 locate ";
     grid-template-columns: repeat(3, 1fr);
   }
 
   .help-section > div div:nth-child(2) {
     padding-left: 84px;
-    border-right:1px solid #4f4c4d;
+    border-right: 1px solid #4f4c4d;
     width: unset;
   }
 
   .help-section > div div:nth-child(2) ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     margin: 0;
     list-style-type: none;
     padding-left: 0;
@@ -181,12 +183,12 @@
     width: 48%;
   }
 
-  .help-section > div div:first-child{
-    border-right:1px solid #4f4c4d;
+  .help-section > div div:first-child {
+    border-right: 1px solid #4f4c4d;
   }
 
-  .help-section > div div:first-child h3 strong:after{
-    content:"\203A"; 
+  .help-section > div div:first-child h3 strong::after {
+    content: "\203A";
   }
 
   .help-section > div div:nth-child(3) {
@@ -197,9 +199,9 @@
     margin-left: 16px;
     padding-top: 0;
   }
+
   .help-section > div div:nth-child(5) {
     margin-left: 16px;
     padding-top: 0;
   }
-
 }
