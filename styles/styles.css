@@ -16,7 +16,7 @@
   --link-hover-color: #136ff6;
   --background-color: #fff;
   --overlay-background-color: #eee;
-  --highlight-background-color: #ccc;
+  --highlight-background-color: #231f20;
   --text-color: #000;
 
   /* fonts */
@@ -69,6 +69,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  overflow-x: hidden;
 }
 
 body.appear {
@@ -315,16 +316,67 @@ main .section {
   */
 }
 
-/* section metadata */
-main .section.highlight {
-  background-color: var(--highlight-background-color);
-}
-
 main {
   position: relative;
 
   @media (min-width: 900px) {
     max-width: 1200px;
     margin: auto;
+  }
+}
+
+/* section metadata */
+.section.highlight {
+  background-color: var(--highlight-background-color);
+  color: #fff;
+  padding: 48px 24px 0;
+}
+
+
+.section.highlight> div:not(main .section.highlight > div > div) {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section.highlight h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.section.highlight .columns-wrapper:nth-last-child(2) {
+  padding-bottom: 64px;
+}
+
+.section.highlight .columns-wrapper:last-child{
+  border-top: 1px solid #4f4c4d;
+  padding: 64px 0;
+}
+
+.section.highlight .columns-wrapper:last-child .columns > div > div:last-child {
+  /* flex: 2; */
+  flex: 0 0 66.66%;
+  font-size: 16px;
+}
+
+.section.highlight .columns-wrapper:last-child .columns > div > div:last-child a {
+  color: white;
+}
+
+.section.highlight #things-you-should-know {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+
+@media (min-width: 768px) {
+  .section.highlight {
+    padding: 32px 0;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+  }
+  .section.highlight #things-you-should-know {
+    font-size: 32px;
   }
 }
