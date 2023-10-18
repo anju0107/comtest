@@ -1,5 +1,4 @@
 footer {
-  padding: 2rem;
   font-size: 14px;
 }
 
@@ -10,4 +9,88 @@ footer .footer {
 
 footer .footer p {
   color: #706d6e;
+}
+
+footer .columns {
+  border-bottom: 1px solid rgb(233, 233, 233);
+  padding: 24px 64px;
+}
+
+footer .columns > div {
+  align-items: start;
+}
+
+footer p:nth-last-child(2) {
+  padding: 45px 64px;
+  padding-bottom: 0;
+  color: #706d6e;
+  margin-top: 0;
+}
+
+footer p:last-child {
+  padding: 0 64px 24px;
+  color: #706d6e;
+  margin-bottom: 0;
+}
+footer h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  margin-top: 0;
+  line-height: 28px;
+}
+
+footer p a {
+  font-size: 14px;
+  text-decoration: underline;
+  color: #706d6e;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+footer li {
+  margin-bottom: 0.5rem;
+  line-height: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #1e1e1e;
+  font-size: 16px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #1e1e1e;
+  font-size: 16px;
+}
+
+footer .columns + div {
+  display:flex;
+}
+
+footer .icon {
+  height: 22px;
+  width: 22px;
+}
+
+@media (max-width: 768px) {
+  footer .columns {
+    padding: 24px 40px;
+  }
+
+  footer p:nth-last-child(2) {
+    padding: 44px 24px 0 30px;
+  }
+  
+  footer p:last-child {
+    padding: 0 30px 24px;
+    color: #706d6e;
+    margin-bottom: 0;
+  }
 }
