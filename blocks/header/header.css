@@ -43,7 +43,7 @@ header nav[aria-expanded="true"] {
   }
 
   header nav[aria-expanded="true"] {
-    min-height: unset;
+    min-height: 80px;
     overflow: visible;
     height: fit-content;
     max-width: unset;
@@ -52,6 +52,9 @@ header nav[aria-expanded="true"] {
 
 header nav p {
   margin: 0;
+  font-family: CBABeaconSans, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
   line-height: 1;
 }
 
@@ -292,6 +295,7 @@ header nav .nav-tools {
   display: flex;
   height: 100%;
   width: 100%;
+  margin-right: 15px;
   justify-content: end;
   align-items: center;
 }

@@ -38,7 +38,7 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 70px;
 
 }
 
@@ -284,14 +284,16 @@ main img {
 
 .nav-tools p:nth-child(2) {
   position: relative;
+  margin-right: 10px;
+  padding-left: 20px;
 }
 
 .nav-tools p:nth-child(2)::before {
   content: "";
   position: absolute;
-  background-color: #fc0;;
-  padding: 40px 50px;
-  transform: translate(-3%, -40%);
+  background-color: #fc0;
+  padding: 40px 250px;
+  transform: translate(-3%, -33%);
   z-index: -1;
 }
 
