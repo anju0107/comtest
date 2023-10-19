@@ -348,13 +348,16 @@ main {
   margin-bottom: 32px;
 }
 
+.section.highlight .columns-wrapper:last-child .columns > div > div:last-child a {
+  color: white;
+}
+
 #are-you-experiencing-financial-difficulty-get-help a {
   border: solid 1px #706d6e;
   color: #231f20;
   border-radius: 1.5rem;
   text-decoration: none;
   font-size: 16px;
-  padding: 0 24px;
   height: 3rem;
   line-height: calc(3rem - 2px);
   padding: 0 1.5rem;
@@ -395,15 +398,10 @@ main {
   font-size: 16px;
 }
 
-.section.highlight .columns-wrapper:last-child .columns > div > div:last-child a {
-  color: white;
-}
-
 .section.highlight #things-you-should-know {
   font-size: 24px;
   margin-bottom: 32px;
 }
-
 
 @media (min-width: 768px) {
   .section.text-cta {
@@ -422,9 +420,11 @@ main {
     margin-bottom: 0;
     font-size: 32px;
   } 
+
    #are-you-experiencing-financial-difficulty-get-help a {
     width: 180px;
   }
+
   .section.highlight {
     padding: 32px 0;
     width: 100vw;
