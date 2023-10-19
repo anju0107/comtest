@@ -88,6 +88,74 @@
   width: 96px;
 }
 
+.one-tile-wrapper.cards-container .cards-wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.one-tile-wrapper.cards-container .cards > ul {
+  /* grid-template-columns: repeat(2, 1fr); */
+  display: block;
+}
+.one-tile-wrapper.cards-container .cards li {
+  box-shadow:none;
+  flex-direction: column;
+}
+
+.one-tile-wrapper.cards-container .cards-card-body {
+  flex-direction: column;
+  flex: 1;
+  /* padding-left: 80px;
+  padding-right:32px; */
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+  padding-top: 48px;
+}
+.one-tile-wrapper.cards-container .cards-card-body p {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.one-tile-wrapper.cards-container .cards-card-body a {
+  display: none;
+}
+
+.one-tile-wrapper.cards-container .cards-card-image {
+  flex: 1;
+}
+
+.one-tile-wrapper.cards-container .cards-card-image img {
+  height: 260px;
+  width: 100%;
+}
+
+#need-to-update-your-mobile-number{
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.one-tile-wrapper .default-content-wrapper {
+  padding: 32px 0 48px;
+  margin: 0 24px;
+}
+.one-tile-wrapper .default-content-wrapper .button-container  {
+  margin: 0;
+}
+
+.one-tile-wrapper .default-content-wrapper .button-container a {
+  background-color: white;
+  border: 1px solid #706d6e;
+  font-weight: 400;
+  margin: 0;
+  color:#706d6e;
+  width: 100%;
+  font-size: 16px;
+  line-height: 46px;
+  padding: 0;
+}
+
 @media (min-width: 768px) {
   #more-from-commbank {
     font-size: 32px;
@@ -109,5 +177,59 @@
   .cards-container .cards-wrapper {
     padding: 0 64px 80px;
   }
+
+  .one-tile-wrapper.cards-container .cards-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .one-tile-wrapper.cards-container .cards > ul {
+    /* grid-template-columns: repeat(2, 1fr); */
+    display: block;
+  }
+  .one-tile-wrapper.cards-container .cards li {
+    box-shadow:none;
+    flex-direction: row;
+  }
+  
+  .one-tile-wrapper.cards-container .cards-card-body {
+    flex-direction: column;
+    flex: 1;
+    padding-left: 80px;
+    padding-right:32px;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0;
+  }
+  .one-tile-wrapper.cards-container .cards-card-body p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+  
+  .one-tile-wrapper.cards-container .cards-card-body a {
+    background-color: white;
+    border: 1px solid #706d6e;
+    font-weight: 400;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .one-tile-wrapper.cards-container .cards-card-image {
+    flex: 1;
+  }
+  
+  .one-tile-wrapper.cards-container .cards-card-image img {
+    height: 435px;
+    width: 100%;
+  }
+  
+  #need-to-update-your-mobile-number{
+    font-size: 32px;
+  }
+
+  .one-tile-wrapper .default-content-wrapper .button-container {
+    display: none;
+      }
   
 }
