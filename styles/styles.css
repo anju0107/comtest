@@ -303,8 +303,6 @@ main img {
   padding-left: 20px;
   padding-right: 10px;
   width: 90px;
-  z-index: -1;
-
 }
 
 .nav-tools p:hover:nth-child(1) {
