@@ -22,13 +22,13 @@ export default function decorate(block) {
 
     const openAccordion = (accordion) => {
       const content = accordion.querySelector('ul');
-      accordion.classList.add('accordion__active');
+      accordion.classList.add('accordionActive');
       content.style.maxHeight = `${content.scrollHeight}px`;
     };
 
     const closeAccordion = (accordion) => {
       const content = accordion.querySelector('ul');
-      accordion.classList.remove('accordion__active');
+      accordion.classList.remove('accordionActive');
       content.style.maxHeight = null;
     };
 

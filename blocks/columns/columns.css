@@ -259,7 +259,7 @@
     will-change: max-height;
   }
 
-  .six-packs-module .accordion__active strong::after {
+  .six-packs-module .accordionActive strong::after {
     left: 0.25em;
     transform: rotate(-45deg);
   }
