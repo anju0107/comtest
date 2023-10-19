@@ -29,3 +29,70 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+.cards-container {
+  padding: 48px 24px 80px;
+  margin-top: 0;
+}
+
+#more-from-commbank {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.cards-container .cards ul{
+  gap: 32px;
+}
+
+.cards-container .cards li {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,30%);
+  border: 0;
+}
+
+.cards-container .cards-card-body{
+  margin: 0;
+  padding: 16px;
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+}
+
+.cards-container .cards-card-body h3 {
+  margin-bottom: 0;
+  line-height: 16px;
+}
+
+.cards-container .cards-card-body h3 strong {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.cards-container .cards-card-body a{
+  color: #231f20;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.cards-container .cards-card-image img {
+  height: 96px;
+  width: 96px;
+}
+
+@media (min-width: 768px) {
+  #more-from-commbank {
+    font-size: 32px;
+  }
+
+  .cards-container .cards-card-image img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .cards-container .cards-card-body a{
+    font-size: 16px;
+  }
+  
+}
