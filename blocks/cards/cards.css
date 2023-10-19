@@ -233,4 +233,7 @@
   .one-tile-wrapper .default-content-wrapper .button-container {
     display: none;
   }
+  .one-tile-wrapper .default-content-wrapper {
+    padding: 0;
+  }
 }
