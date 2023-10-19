@@ -15,4 +15,37 @@ export default function decorate(block) {
       }
     });
   });
+  // // Accordian for highlight in mobile
+  /* eslint-disable max-len */
+  if (block.classList.contains('six-packs-module')) {
+    const accordions = document.querySelectorAll('.six-packs-module div div');
+
+    const openAccordion = (accordion) => {
+      const content = accordion.querySelector('ul');
+      accordion.classList.add('accordion__active');
+      content.style.maxHeight = `${content.scrollHeight}px`;
+    };
+
+    const closeAccordion = (accordion) => {
+      const content = accordion.querySelector('ul');
+      accordion.classList.remove('accordion__active');
+      content.style.maxHeight = null;
+    };
+
+    accordions.forEach((accordion) => {
+      accordion.classList.add('accordion');
+      const intro = accordion.querySelector('p strong');
+      const content = accordion.querySelector('ul');
+      intro.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (content.style.maxHeight) {
+          closeAccordion(accordion);
+        } else {
+          accordions.forEach((_accordion) => closeAccordion(_accordion));
+          openAccordion(accordion);
+        }
+      });
+    });
+  }
+  /* eslint-enable max-len */
 }
