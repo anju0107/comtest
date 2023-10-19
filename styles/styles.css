@@ -519,9 +519,9 @@ main {
 
   .section.quick-links {
     border-bottom: 0;
-    border-bottom: 0;
     padding: 0;
   }
+  
   .section.quick-links > div {
     padding-bottom: 64px;
     padding-top: 64px;
