@@ -47,7 +47,7 @@
 .cards-container .cards li {
   display: flex;
   flex-direction: row;
-  box-shadow: 0 0 3px 0 rgb(0, 0, 0, 30%);
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 30%);
   border: 0;
 }
 
@@ -232,5 +232,9 @@
 
   .one-tile-wrapper .default-content-wrapper .button-container {
     display: none;
+  }
+
+  .one-tile-wrapper .default-content-wrapper {
+    padding: 0;
   }
 }

@@ -38,9 +38,9 @@
 }
 
 .card-wrapper {
-  padding: 24px 12px;
+  padding: 24px 0;
   border-top: 1px solid #e9e9e9;
-  margin: 0 12px;
+  margin: 0 24px;
 }
 
 .card-wrapper > div > div {
@@ -195,7 +195,9 @@
 
 @media (max-width: 768px) {
   .six-packs-module {
-    padding: 48px 24px;
+    padding: 48px 0;
+    margin: 0 24px;
+    border-bottom: 1px solid #e9e9e9;
   }
 
   .six-packs-module .icon {
@@ -257,7 +259,7 @@
     will-change: max-height;
   }
 
-  .six-packs-module .accordion__active strong::after {
+  .six-packs-module .accordion-active strong::after {
     left: 0.25em;
     transform: rotate(-45deg);
   }
@@ -388,7 +390,8 @@
   }
 
   .card-wrapper {
-    padding: 60px 64px 64px;
+    padding: 60px 0 64px;
+    margin: 0 64px;
   }
 
   .help-section > div div:nth-child(2) {
@@ -428,9 +431,5 @@
   .help-section > div div:nth-child(5) {
     margin-left: 16px;
     padding-top: 0;
-  }
-
-  .quick-links {
-    padding: 64px;
   }
 }
