@@ -197,6 +197,7 @@
   .six-packs-module {
     padding: 48px 24px;
   }
+
   .six-packs-module .icon {
     width: 64px;
     height: 64px;
@@ -230,16 +231,21 @@
     display: inline-block;
     height: 0.45em;
     position: relative;
-    transform: rotate(-45deg);
     vertical-align: top;
     width: 0.45em;
     top: 0;
     transform: rotate(135deg);
   }
 
+  .six-packs-module .accordion {
+    padding: 24px 0;
+    border-bottom: 1px solid #e9e9e9
+  }
+  
   .six-packs-module div:last-child .accordion:last-child {
     border-bottom: 0;
   }
+
   .six-packs-module > div div ul  {
     text-decoration: none;
     font-size: 16px;
@@ -250,14 +256,12 @@
     overflow: hidden;
     will-change: max-height;
   }
-  .six-packs-module .accordion {
-    padding: 24px 0;
-    border-bottom: 1px solid #e9e9e9
-  }
+
   .six-packs-module .accordion__active strong::after {
     left: 0.25em;
     transform: rotate(-45deg);
   }
+
   .six-packs-module > div div ul li {
     padding: 16px 0;
     border-bottom: solid 1px #e9e9e9;
@@ -274,8 +278,8 @@
     font-weight: 400;
     font-size: 1rem;
   }
-
 }
+
 /* HELP SECTION DESKTOP STYLES */
 @media (min-width: 768px) {
   .six-packs-module > div {
@@ -332,6 +336,7 @@
     left: 0;
     transform: rotate(45deg);
   }
+
   .six-packs-module > div div p  {
     margin: 0;
     display: flex;
@@ -355,13 +360,14 @@
     font-size: 1rem;
   }
 
+  .six-packs-module > div div p a:hover {
+    text-decoration: underline;
+  }
+
   .six-packs-module > div div ul li a:hover {
     text-decoration: underline;
   }
 
-  .six-packs-module > div div p a:hover {
-    text-decoration: underline;
-  }
   .six-packs-module > div div ul {
     padding-left: 80px;
     margin-top: 16px;
