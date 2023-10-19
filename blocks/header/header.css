@@ -306,7 +306,7 @@ header nav .nav-tools {
   top: 0;
   left: 0;
   background-color: white;
-  padding: 40px 1.5rem 0 4rem !important;
+  padding: 45px 1.5rem 2rem 4rem !important;
   width: 50%;
   animation: fadeInUp 1.5s linear;
   color: #1e1e1e;
@@ -321,10 +321,10 @@ header nav .nav-tools {
   content: "";
   position: absolute;
   width: 1rem;
-  height: 75%;
+  height: 70%;
   bottom: 0;
   left: 0;
-  transform: translate(0%, -15%);
+  transform: translate(0%, -20%);
 }
 
 .text-wrapper>.default-content-wrapper>h2 {
@@ -338,6 +338,7 @@ header nav .nav-tools {
   --color: "textDark";
   
   margin: 0;
+  padding-right: 50px;
 }
 
 .text-wrapper>.default-content-wrapper>p {
@@ -349,6 +350,8 @@ header nav .nav-tools {
   line-height: 1.5rem;
   
   --color: "textDark";
+  
+  padding-right: 50px;
 }
 
 .text-wrapper>.default-content-wrapper>.button-container>.button {
@@ -359,6 +362,7 @@ header nav .nav-tools {
   font-size: 1rem;
   font-weight: 400;
   
+  line-height: 36px;
   --textstyle: "Text16Left";
 }
 
