@@ -15,4 +15,33 @@ export default function decorate(block) {
       }
     });
   });
+
+  // // Accordian for highlight in mobile
+  // const highlightElements = document.getElementsByClassName('section highlight columns-container');
+  // const supportHeader = document.getElementById('circle-support--faqs');
+  // if (supportHeader) {
+  //   console.log('33');
+  //   const supportHeaderChevron = document.createElement('div');
+  //   supportHeaderChevron.className = 'header-chevron-up';
+  //   supportHeader.parentNode.insertBefore(supportHeaderChevron, supportHeader.nextElementSibling);
+  //   // break; // Exit the loop once the element is found
+  // }
+
+  // const highlight = document.getElementsByClassName('section highlight columns-container');
+
+  // if (highlight) {
+  //   const circleSupportFaqs = highlight.querySelector('#circle-support--faqs');
+  //   if (circleSupportFaqs) {
+  //     // Do something with the element
+  //   }
+  // }
+  // const supportHeader = highlight.getElementById('circle-support--faqs');
+  // console.log(supportHeader);
+  // const supportHeaderChevron = document.createElement('div');
+  // supportHeaderChevron.className = 'header-chevron-up';
+  // supportHeader.parentNode.insertBefore(supportHeaderChevron, supportHeader.nextElementSibling);
+
+  // supportHeader.addEventListener('click', () => {
+  //   toggleAccordian();
+  // })
 }

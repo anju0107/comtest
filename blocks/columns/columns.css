@@ -230,6 +230,33 @@
     height: 100%;
     width: 100%;
   }
+  .six-packs-module > div div{
+    /* display: flex; */
+  }
+  .six-packs-module > div div strong {
+    display:flex;
+    align-items: center;
+  }
+
+  .six-packs-module > div div strong::after {
+    border-style: solid;
+    border-width: 0.15em 0.15em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.45em;
+    left: 0.15em;
+    position: relative;
+    vertical-align: top;
+    width: 0.45em;
+    left: 0;
+    transform: rotate(45deg);
+  }
+
+  .six-packs-module > div div p  {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
 
   .six-packs-module > div div p a {
     text-decoration: none;
@@ -248,8 +275,16 @@
     font-size: 1rem;
   }
 
+  .six-packs-module > div div ul li a:hover {
+    text-decoration: underline;
+  }
+
   .six-packs-module > div div p a:hover {
     text-decoration: underline;
+  }
+  .six-packs-module > div div ul {
+    padding-left: 80px;
+    margin-top: 16px;
   }
 
   .six-packs-module > div div ul li {
@@ -261,13 +296,14 @@
     width: 48%;
   }
 
-  .six-packs-module > div div ul li:hover {
-    text-decoration: underline;
+  .six-packs-module .icon {
+    width: 56px;
+    height: 56px;
+    padding: 4px;
   }
 
   .card-wrapper {
-    padding-top: 40px;
-    padding-bottom: 64px;
+    padding: 60px 64px 64px;
   }
 
   .help-section > div div:nth-child(2) {
@@ -307,5 +343,9 @@
   .help-section > div div:nth-child(5) {
     margin-left: 16px;
     padding-top: 0;
+  }
+
+  .quick-links {
+    padding: 64px;
   }
 }

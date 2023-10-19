@@ -19,6 +19,7 @@ header nav {
   height: var(--nav-height);
   padding-left: 1rem;
   font-family: var(--body-font-family);
+  background-color: white;
 }
 
 header nav[aria-expanded="true"] {
@@ -301,18 +302,17 @@ header nav .nav-tools {
 
 
 .text-wrapper {
-  position: absolute;
   top: 0;
   left: 0;
   background-color: white;
-  padding: 45px 1.5rem 2rem 4rem !important;
-  width: 50%;
+  padding: 45px 1.5rem 2rem 4rem;
+  width: 42%;
   animation: fadeInUp 1.5s linear;
   color: #1e1e1e;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  transform: translate(10%, 15%);
+  transform: translate(0, 15%);
 }
 
 .text-wrapper>.default-content-wrapper::before {
@@ -361,6 +361,47 @@ header nav .nav-tools {
   font-size: 1rem;
   font-weight: 400;
   line-height: 36px;
-  
+
   --textstyle: "Text16Left";
 }
+
+/* HERO TEXT WRAPPER MOBILE STYLES */
+@media (max-width: 1024px) {
+  .text-wrapper {
+    transform: translate(0%, 47%);
+    width: unset;
+    border-top: solid 8px #fc0;
+    padding: 48px 24px; 
+  }
+
+  .text-wrapper>.default-content-wrapper::before {
+    display: none;
+  }
+
+  .text-wrapper>.default-content-wrapper>h2, #keeping-your-accounts-safe-is-our-priority strong {
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .text-wrapper>.default-content-wrapper>p {
+    margin: 0;
+    padding-right: 0;
+  }
+
+  .text-wrapper>.default-content-wrapper>.button-container>.button {
+    width: 100%;
+  }
+
+  .hero-banner .default-content-wrapper > p{
+    margin-top: 0;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}
+
+
+/* .section {
+  margin-top: 10px;
+} */
