@@ -559,6 +559,10 @@ main {
   padding: 32px 24px;
 }
 
+.section.home-loans-highlight .columns-wrapper:last-child {
+  border-top: 1px solid #e9e9e9;
+}
+
 @media (max-width: 769px) {
   .section.home-loans-highlight #were-here-to-help {
     font-size: 24px;
@@ -573,7 +577,7 @@ main {
   }
 
   .section.home-loans-highlight > div:nth-child(2) div div div {
-    max-height: 240px;
+    max-height: 200px;
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -590,10 +594,17 @@ main {
   .section.home-loans-highlight > div:nth-child(2) .icon {
     width: 64px;
     height: 64px;
-    margin-bottom: 134px;
+    margin-bottom: 100px;
+    padding-left: 10px;
   }
 
-  .section.home-loans-highlight .columns-wrapper{
+  .section.home-loans-highlight > div:nth-child(2) div div p {
+    margin: 0;
+    max-width: 66%;
+    padding: 8px 16px 8px 24px;
+  }
+
+  .section.home-loans-highlight .columns-wrapper:nth-child(2){
     padding-bottom: 0 !important;
   }
 }
