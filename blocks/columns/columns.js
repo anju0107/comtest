@@ -47,5 +47,11 @@ export default function decorate(block) {
       });
     });
   }
+
+  if (block.classList.contains('home-loan-columns')) {
+    const homeLoanBody = document.body;
+    homeLoanBody.classList.add('home-loan');
+  }
+
   /* eslint-enable max-len */
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Investments64</title>
+    <g id="Investments64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Investments">
+            <rect id="Bounding-Box" x="0" y="0" width="64" height="64"></rect>
+            <g transform="translate(14.000000, 14.500000)" stroke="#1E1E1E">
+                <circle id="Oval-4" fill="#FFFFFF" cx="18" cy="18" r="17.5"></circle>
+                <circle id="Focus" fill="#FAEC20" cx="18" cy="18" r="11.5"></circle>
+                <line x1="7.70782056" y1="32.3655103" x2="6.29217944" y2="34.488972" id="Line" stroke-linecap="square"></line>
+                <line x1="29.6991157" y1="32.3597583" x2="28.3008843" y2="34.4947239" id="Line-Copy" stroke-linecap="square" transform="translate(29.000000, 33.427241) scale(-1, 1) translate(-29.000000, -33.427241) "></line>
+                <circle id="Oval-4-Copy" fill="#FFFFFF" cx="18" cy="18" r="5.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -18,6 +18,7 @@
   --overlay-background-color: #eee;
   --highlight-background-color: #231f20;
   --text-color: #000;
+  --primary-color: #fc0;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
@@ -176,26 +177,28 @@ button {
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
-  border: 2px solid transparent;
-  padding: 5px 30px;
+  border: 1px solid #706d6e;
+  padding: 0 30px;
   text-align: center;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
+  color: #706d6e;
+  background-color: white;
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 30px;
+  line-height: 46px;
+  margin-bottom: 0;
 }
 
 a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  border:1px solid #d3d2d2;
   cursor: pointer;
 }
 
@@ -207,9 +210,19 @@ button:disabled:hover {
 
 a.button.secondary,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color)
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: #231f20;;
+  font-weight: 400;
+}
+
+a.button.secondary:hover,
+a.button.secondary:focus,
+button.secondary:hover,
+button.secondary:focus {
+  background-color: #ffdb4c;
+  border: 1px solid #ffdb4c;
+  color: #231f20;
 }
 
 main input {
@@ -336,6 +349,13 @@ main {
   }
 }
 
+.home-loan main {
+  @media (min-width: 1024px) {
+    max-width: 1328px;
+    margin: auto;
+  }
+}
+
 .section {
   background-color: #fff;
   margin-top: 0;
@@ -353,8 +373,12 @@ main {
   margin: 0;
 }
 
-.section.text-wrapper ~ .section.columns-container:not(.card-section, .highlight) {
+.section.text-wrapper ~ .section.quick-links:not(.card-section, .highlight) {
   margin-top: 150px;
+}
+
+.section.text-wrapper ~ .section.home-loan-links:not(.card-section, .highlight) {
+  margin-top: 158px;
 }
 
 .section.highlight {
@@ -453,6 +477,15 @@ main {
   margin-bottom: 32px;
 }
 
+#home-loans {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.home-loans-text-wrapper.text-wrapper {
+  padding: 32px 24px;
+}
+
 @media (min-width: 768px) {
   .section.hero-banner {
     position: absolute;
@@ -519,11 +552,47 @@ main {
     border-bottom: 0;
     padding: 0;
   }
-  
+
   .section.quick-links > div {
     padding-bottom: 64px;
     padding-top: 64px;
     border-bottom: 1px solid #e9e9e9;
     margin: 0 64px;
+  }
+
+  .section.text-wrapper ~ .section.home-loan-links:not(.card-section, .highlight) {
+    margin-top: 50px;
+  }
+
+  .section.home-loans-hero {
+    margin-left: 0;
+    left:40%;
+    width: 50vw;
+  }
+
+  #home-loans {
+    font-size: 40px;
+  }
+  
+  .home-loans-text-wrapper.text-wrapper {
+    width: 50%;
+    padding: 64px;
+  }
+
+  .home-loans-text-wrapper .button-container {
+    display: inline;
+    padding: 0;
+  }
+
+  .text-wrapper > .default-content-wrapper > .button-container{
+    padding:0;
+  }
+
+  a.button:any-link {
+    padding: 0 24px;
+  }
+
+  a.button.secondary {
+    margin-left: 16px;
   }
 }

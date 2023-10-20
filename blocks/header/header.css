@@ -340,7 +340,7 @@ header nav .nav-tools {
   padding-right: 50px;
 }
 
-.text-wrapper>.default-content-wrapper>p {
+.text-wrapper > .default-content-wrapper >p {
   --textstyle: "Text16Left";
   
   font-family: CBABeaconSans, sans-serif;
@@ -390,7 +390,7 @@ header nav .nav-tools {
     padding-right: 0;
   }
 
-  .text-wrapper>.default-content-wrapper>.button-container>.button {
+  .text-wrapper .default-content-wrapper .button-container .button {
     width: 100%;
   }
 
