@@ -137,10 +137,6 @@
   width: 100%;
 }
 
-.home-loan-links .columns-8-cols > div div:nth-child(odd) {
-  border-right: 1px solid #e9e9e9;
-}
-
 .help-section > div div:nth-child(4) {
   grid-area: contact;
   padding-bottom: 24px;
@@ -151,6 +147,10 @@
 .help-section > div div:nth-child(5) {
   grid-area: locate;
   padding-top: 24px;
+}
+
+.home-loan-links .columns-8-cols > div div:nth-child(odd) {
+  border-right: 1px solid #e9e9e9;
 }
 
 .why-commbank .columns-3-cols > div:last-child div:last-child {
@@ -404,13 +404,15 @@
     gap: 0;
   }
 
-  .home-loan-links .columns-8-cols > div div {
-    margin-top: 16px;
-    margin-bottom: 8px;
-  }
-
   .why-commbank .columns-3-cols > div {
     align-items: flex-start;
+  }
+
+  .home-loan-links .columns-8-cols > div div {
+    margin-top: 16px;
+    padding: 0 12px;
+    margin: 0;
+    margin-bottom: 8px;
   }
 
   .why-commbank .columns-3-cols > div div {
@@ -454,12 +456,6 @@
 
   .home-loan-links .columns-8-cols > div div:not(:last-child) {
     border-right: 1px solid #e9e9e9;
-  }
-
-  .home-loan-links .columns-8-cols > div div {
-    padding: 0 12px;
-    margin: 0;
-    margin-bottom: 8px;
   }
 
   .home-loan-links {
