@@ -100,7 +100,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--heading-font-size-xl)
+  font-size: 24px;
 }
 
 h3 {
@@ -573,7 +573,7 @@ main {
   #home-loans {
     font-size: 40px;
   }
-  
+
   .home-loans-text-wrapper.text-wrapper {
     width: 50%;
     padding: 64px;
