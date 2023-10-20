@@ -26,7 +26,7 @@ export default async function decorate(block) {
     const kommunicateSettings = {
       'appId': '1482105436ad330999fedb7b66ea215b8',
       'popupWidget': true,
-      'automaticChatOpenOnNavigation': true
+      'automaticChatOpenOnNavigation': true,
     };
     const script = document.createElement('script');
     script.type = 'text/javascript';
@@ -35,6 +35,7 @@ export default async function decorate(block) {
     const head = document.getElementsByTagName('head')[0];
     head.appendChild(script);
     window.kommunicate = komm;
+    /* eslint no-underscore-dangle: 0 */
     komm._globals = kommunicateSettings;
   })(document, window.kommunicate || {});
 
