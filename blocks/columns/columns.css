@@ -50,7 +50,7 @@
 
 .home-loan-links .columns-8-cols > div {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding: 16px 24px;
 }
 
@@ -90,7 +90,8 @@
   padding-left: 20px;
 }
 
-.why-commbank p, .why-commbank li {
+.why-commbank p,
+.why-commbank li {
   margin: 0;
   margin-bottom: 24px;
   font-size: 16px;
@@ -99,7 +100,9 @@
 .why-commbank li {
   margin-bottom: 8px;
 }
-.why-commbank p a, .why-commbank li a {
+
+.why-commbank p a,
+.why-commbank li a {
   color: #1175b5;
 }
 
@@ -112,7 +115,7 @@
   margin-bottom: 24px;
 }
 
-.why-commbank .icon{
+.why-commbank .icon {
   height: 64px;
   width: 64px;
 }
@@ -120,15 +123,7 @@
 .why-commbank .columns-3-cols > div div {
   padding-top: 24px;
   padding-bottom: 16px;
-    border-bottom: 1px solid #e9e9e9;
-}
-
-.why-commbank .columns-3-cols > div:last-child div:last-child {
-  border-bottom: 0;
-}
-
-.why-commbank strong {
-  font-size: 20px;
+  border-bottom: 1px solid #e9e9e9;
 }
 
 .help-section > div div:first-child {
@@ -140,6 +135,30 @@
   align-self: center;
   height: 100%;
   width: 100%;
+}
+
+.home-loan-links .columns-8-cols > div div:nth-child(odd) {
+  border-right: 1px solid #e9e9e9;
+}
+
+.help-section > div div:nth-child(4) {
+  grid-area: contact;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #4f4c4d;
+  padding-top: 24px;
+}
+
+.help-section > div div:nth-child(5) {
+  grid-area: locate;
+  padding-top: 24px;
+}
+
+.why-commbank .columns-3-cols > div:last-child div:last-child {
+  border-bottom: 0;
+}
+
+.why-commbank strong {
+  font-size: 20px;
 }
 
 .help-section > div div:nth-child(2) ul {
@@ -186,7 +205,7 @@
 
 .home-loan-links .columns-8-cols a {
   text-decoration: none;
-  color: #231f20;;
+  color: #231f20;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -204,18 +223,6 @@
   text-decoration: none;
   padding-top: 16px;
   padding-bottom: 16px;
-}
-
-.help-section > div div:nth-child(4) {
-  grid-area: contact;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #4f4c4d;
-  padding-top: 24px;
-}
-
-.help-section > div div:nth-child(5) {
-  grid-area: locate;
-  padding-top: 24px;
 }
 
 .help-section .icon-circle,
@@ -258,16 +265,6 @@
   margin-bottom: 1px;
 }
 
-.home-loan-links .columns-8-cols > div div {
-  margin-top: 16px;
-  margin-bottom: 8px;
-  
-}
-
-.home-loan-links .columns-8-cols > div div:nth-child(odd) {
-  border-right: 1px solid #e9e9e9;
-}
-
 .home-loan-links .columns-8-cols strong {
   text-align: center;
   line-height: 24px;
@@ -295,7 +292,7 @@
     width: 64px;
     height: 64px;
   }
-  
+
   .six-packs-module > div div p a {
     text-decoration: none;
     color: #1e1e1e;
@@ -304,23 +301,23 @@
     font-weight: 800;
     font-size: 20px;
   }
-  
-  .six-packs-module > div div p  {
+
+  .six-packs-module > div div p {
     margin: 0;
     display: flex;
     align-items: center;
   }
-  
-  .six-packs-module > div div p strong  {
+
+  .six-packs-module > div div p strong {
     display: flex;
     flex: 2;
     justify-content: space-between;
   }
-  
+
   .six-packs-module > div div p strong::after {
     border-style: solid;
     border-width: 0.15em 0.15em 0 0;
-    content: '';
+    content: "";
     display: inline-block;
     height: 0.45em;
     position: relative;
@@ -332,14 +329,14 @@
 
   .six-packs-module .accordion {
     padding: 24px 0;
-    border-bottom: 1px solid #e9e9e9
+    border-bottom: 1px solid #e9e9e9;
   }
-  
+
   .six-packs-module div:last-child .accordion:last-child {
     border-bottom: 0;
   }
 
-  .six-packs-module > div div ul  {
+  .six-packs-module > div div ul {
     text-decoration: none;
     font-size: 16px;
     list-style-type: none;
@@ -407,6 +404,54 @@
     gap: 0;
   }
 
+  .home-loan-links .columns-8-cols > div div {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .why-commbank .columns-3-cols > div {
+    align-items: flex-start;
+  }
+
+  .why-commbank .columns-3-cols > div div {
+    border-bottom: 0;
+  }
+
+  .six-packs-module > div div:first-child {
+    grid-area: header;
+  }
+
+  .six-packs-module > div div:nth-child(2) {
+    grid-area: links1;
+    align-self: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .help-section > div div:nth-child(2) {
+    padding-left: 84px;
+    border-right: 1px solid #4f4c4d;
+    width: unset;
+  }
+
+  .help-section > div div:first-child {
+    border-right: 1px solid #4f4c4d;
+  }
+
+  .help-section > div div:nth-child(3) {
+    display: none;
+  }
+
+  .help-section > div div:nth-child(4) {
+    margin-left: 16px;
+    padding-top: 0;
+  }
+
+  .help-section > div div:nth-child(5) {
+    margin-left: 16px;
+    padding-top: 0;
+  }
+
   .home-loan-links .columns-8-cols > div div:not(:last-child) {
     border-right: 1px solid #e9e9e9;
   }
@@ -424,35 +469,16 @@
   .home-loan-links .icon {
     margin-bottom: 8px;
   }
-   
-  .why-commbank .columns-3-cols > div {
-    align-items: flex-start;
-  }
-  
-  .why-commbank .columns-3-cols > div div {
-    border-bottom: 0;
-  }
-
-  .six-packs-module > div div:first-child {
-    grid-area: header;
-  }
-
-  .six-packs-module > div div:nth-child(2) {
-    grid-area: links1;
-    align-self: center;
-    height: 100%;
-    width: 100%;
-  }
 
   .six-packs-module > div div strong {
-    display:flex;
+    display: flex;
     align-items: center;
   }
 
   .six-packs-module > div div strong::after {
     border-style: solid;
     border-width: 0.15em 0.15em 0 0;
-    content: '';
+    content: "";
     display: inline-block;
     height: 0.45em;
     position: relative;
@@ -462,7 +488,7 @@
     transform: rotate(45deg);
   }
 
-  .six-packs-module > div div p  {
+  .six-packs-module > div div p {
     margin: 0;
     display: flex;
     align-items: center;
@@ -518,12 +544,6 @@
     margin: 0 64px;
   }
 
-  .help-section > div div:nth-child(2) {
-    padding-left: 84px;
-    border-right: 1px solid #4f4c4d;
-    width: unset;
-  }
-
   .help-section > div div:nth-child(2) ul {
     display: flex;
     flex-flow: row wrap;
@@ -535,25 +555,7 @@
     padding-right: 16px;
   }
 
-  .help-section > div div:first-child {
-    border-right: 1px solid #4f4c4d;
-  }
-
   .help-section > div div:first-child h3 strong::after {
     content: "\203A";
-  }
-
-  .help-section > div div:nth-child(3) {
-    display: none;
-  }
-
-  .help-section > div div:nth-child(4) {
-    margin-left: 16px;
-    padding-top: 0;
-  }
-
-  .help-section > div div:nth-child(5) {
-    margin-left: 16px;
-    padding-top: 0;
   }
 }
