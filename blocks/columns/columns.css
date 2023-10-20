@@ -281,6 +281,35 @@
   width: 64px;
 }
 
+.image-column {
+  padding: 0 24px;
+}
+
+.image-column .columns-wrapper {
+  padding: 48px 0;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.image-column h2 {
+  margin: 40px 0;
+}
+
+.image-column p {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.image-column a {
+  font-style: normal;
+  color: #1175b5;
+  font-weight: 400;
+}
+
+.image-column .columns-img-col{
+  height: 176px;
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   .six-packs-module {
     padding: 48px 0;
@@ -402,6 +431,13 @@
     flex-direction: row;
     padding: 16px 24px;
     gap: 0;
+  }
+  .why-commbank{
+    padding: 64px;
+  }
+
+  .why-commbank h2 strong {
+    font-size: 32px;
   }
 
   .why-commbank .columns-3-cols > div {
@@ -553,5 +589,37 @@
 
   .help-section > div div:first-child h3 strong::after {
     content: "\203A";
+  }
+
+  .image-column {
+    padding: 0 64px;
+  }
+
+  .image-column .columns-wrapper {
+    padding: 64px 0;
+  }
+
+  .image-column .columns-img-col{
+    height: 272px;
+  }
+
+  .image-column .columns-2-cols >div {
+    gap: 0;
+  }
+
+  .image-column .columns-2-cols >div > div:not(.columns-img-col){
+    flex: 0 1 50%;
+    max-width: 50%;
+  }
+
+  .image-column.image-column-right .columns-img-col {
+    margin-right: -128px;
+  }  
+  .image-column.image-column-left .columns-2-cols >div > div:not(.columns-img-col){
+    padding-left: 64px;
+  }
+
+  .image-column.image-column-left .columns-img-col {
+    margin-left: -128px;
   }
 }

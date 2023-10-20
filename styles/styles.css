@@ -599,6 +599,10 @@ main {
 }
 
 @media (min-width: 768px) {
+  h2, h2 strong{
+    font-size: 32px;
+  }
+
   .section.hero-banner {
     position: absolute;
     margin-left: -50vw;
