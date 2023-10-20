@@ -306,8 +306,9 @@ header nav .nav-tools {
 }
 
 @media (max-width: 1023px) {
-header nav[aria-expanded="true"] .nav-tools {
-  visibility: hidden;
+  header nav[aria-expanded="true"] .nav-tools {
+    visibility: hidden;
+  }
 }
 
 .text-wrapper {
