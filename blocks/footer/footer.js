@@ -22,13 +22,20 @@ export default async function decorate(block) {
     decorateIcons(footer);
     block.append(footer);
   }
-  (function (d, m) {
-    var kommunicateSettings =
-      { "appId": "1482105436ad330999fedb7b66ea215b8", "popupWidget": true, "automaticChatOpenOnNavigation": true };
-    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-    s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-    var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-    window.kommunicate = m; m._globals = kommunicateSettings;
+  (function(d, komm) {
+    const kommunicateSettings = {
+      "appId": "1482105436ad330999fedb7b66ea215b8",
+      "popupWidget": true,
+      "automaticChatOpenOnNavigation": true
+    };
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.async = true;
+    script.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+    const head = document.getElementsByTagName("head")[0];
+    head.appendChild(script);
+    window.kommunicate = komm;
+    komm._globals = kommunicateSettings;
   })(document, window.kommunicate || {});
 
 }
