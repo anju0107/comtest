@@ -48,7 +48,7 @@ export default async function decorate(block) {
 
   function getCookie(name) {
     const cookies = document.cookie.split(';');
-    for (let i = 0; i < cookies.length; i=i+1) {
+    for (let i = 0; i < cookies.length; i += 1) {
       const cookie = cookies[i].trim();
       if (cookie.indexOf(`${name}=`) === 0) {
         return cookie.substring(name.length + 1, cookie.length);
