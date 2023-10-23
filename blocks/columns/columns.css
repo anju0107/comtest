@@ -51,7 +51,10 @@
 .home-loan-links .columns-8-cols > div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 16px 24px;
+  padding: 0 24px;
+  padding-top: 36px;
+  height: 628px;
+  align-items: start;
 }
 
 .card-wrapper > div > div:last-child {
@@ -107,6 +110,8 @@
 }
 
 .why-commbank {
+  border-top: 1px solid #e9e9e9;
+  margin-top: -1px;
   padding: 48px 24px;
 }
 
@@ -326,6 +331,78 @@
   overflow: hidden;
 }
 
+.application-columns {
+  padding: 64px;
+}
+
+.application-columns div {
+  align-items: start;
+}
+
+.application-columns div div h3 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.application-columns div div p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.application-columns div div a {
+  color: #1175b5;
+}
+
+.application-columns div div a:hover {
+  text-decoration: none;
+}
+
+.application-columns div div p.button-container em a {
+  padding: 0 54px;
+}
+
+.text-cta-home-loans {
+  padding: 64px;
+}
+
+.text-cta-home-loans h3 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.two-column {
+  padding: 64px 0;
+  margin: 0 64px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.two-column div {
+  align-items: start;
+}
+
+.two-column div div:first-child {
+  margin-top: 0;
+  max-width: 33.33%;
+}
+
+.two-column div div:last-child {
+  font-size: 1rem;
+}
+
+.two-column div div p.button-container a {
+  padding: 0 40px;
+}
+
+.two-column div div h2 {
+  margin-top: 10px;
+}
+
+.two-column div div a {
+  color: #1175b5;
+}
+
 @media (max-width: 768px) {
   .six-packs-module {
     padding: 48px 0;
@@ -418,6 +495,48 @@
     font-weight: 400;
     font-size: 1rem;
   }
+
+  .application-columns {
+    padding: 48px 24px;
+  }
+
+  .application-columns div div {
+    padding-bottom: 10px;
+  }
+
+  .application-columns div div:nth-child(2) {
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 16px;
+  }
+
+  .application-columns div div p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+  .application-columns div div p.button-container em a {
+    width: 100%;
+  }
+
+  .two-column {
+    padding: 24px 0;
+    margin: 0 24px;
+    border-bottom: 1px solid #e9e9e9;
+  }
+
+  .two-column div {
+    margin-bottom: 24px;
+  }
+
+  .two-column div div:first-child {
+    max-width: 100%;
+  }
+
+  .two-column div div p.button-container a {
+    width: 100%;
+  }
+
+
 }
 
 /* DESKTOP STYLES */
@@ -452,7 +571,9 @@
     flex-direction: row;
     padding: 16px 24px;
     gap: 0;
+    height: auto;
   }
+
   .why-commbank{
     padding: 64px;
   }
@@ -632,9 +753,14 @@
     gap: 0;
   }
 
+  .image-column .columns-2-cols >div > div:first-child {
+    padding-top: 64px;
+    padding-right: 64px;
+  }
+
   .image-column .columns-2-cols >div > div:not(.columns-img-col){
-    flex: 0 1 50%;
-    max-width: 50%;
+    flex: 0 1 45%;
+    max-width: 45%;
   }
 
   .image-column.image-column-right .columns-img-col {
