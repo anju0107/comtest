@@ -39,4 +39,33 @@ export default async function decorate(block) {
     komm._globals = kommunicateSettings;
   })(document, window.kommunicate || {});
 
+  function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+function getCookie(name) {
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.indexOf(name + '=') === 0) {
+            return cookie.substring(name.length + 1, cookie.length);
+        }
+    }
+    return null;
+}
+
+  const emailIds = ["user1@example.com", "user2@example.com", "user3@example.com", "user4@example.com"];
+  function setRandomEmailCookie() {
+    const randomIndex = Math.floor(Math.random() * emailIds.length);
+    const randomEmail = emailIds[randomIndex];
+
+    if (!getCookie("email")) {
+      setCookie("email", randomEmail, 30);
+    }
+  }
+  window.addEventListener("load", setRandomEmailCookie);
+
 }
