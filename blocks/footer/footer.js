@@ -22,11 +22,11 @@ export default async function decorate(block) {
     decorateIcons(footer);
     block.append(footer);
   }
-  (function(d, komm) {
+  ( function (d, komm) {
     const kommunicateSettings = {
-      'appId': '1482105436ad330999fedb7b66ea215b8',
-      'popupWidget': true,
-      'automaticChatOpenOnNavigation': true,
+      appId: '1482105436ad330999fedb7b66ea215b8',
+      popupWidget: true,
+      automaticChatOpenOnNavigation: true,
     };
     const script = document.createElement('script');
     script.type = 'text/javascript';
@@ -42,15 +42,15 @@ export default async function decorate(block) {
   function setCookie(name, value, days) {
     const date = new Date();
     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    const expires = 'expires=' + date.toUTCString();
-    document.cookie = name + '=' + value + ';' + expires + ';path=/';
+    const expires = `expires= ${date.toUTCString()}`;
+    document.cookie = `${name} = ${value} ; ${expires} ;path=/`;
   }
 
   function getCookie(name) {
     const cookies = document.cookie.split(';');
-    for (let i = 0; i < cookies.length; i++) {
+    for (let i = 0; i < cookies.length; i=i+1) {
       const cookie = cookies[i].trim();
-      if (cookie.indexOf(name + '=') === 0) {
+      if (cookie.indexOf(`${name}=`) === 0) {
         return cookie.substring(name.length + 1, cookie.length);
       }
     }
@@ -61,11 +61,10 @@ export default async function decorate(block) {
   function setRandomEmailCookie() {
     const randomIndex = Math.floor(Math.random() * emailIds.length);
     const randomEmail = emailIds[randomIndex];
-
     if (!getCookie('email')) {
       setCookie('email', randomEmail, 30);
     }
   }
-  window.addEventListener('load', setRandomEmailCookie);
+  setRandomEmailCookie();
 
 }
