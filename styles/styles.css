@@ -470,10 +470,15 @@ main {
   padding: 0 !important;
 }
 
-.section.home-loans-highlight > div:nth-child(2) .icon {
+.section.home-loans-highlight .icon {
   width: 64px;
   height: 64px;
   margin-bottom: 134px;
+}
+
+.section.home-loans-highlight .icon img {
+  width: 64px;
+  height: 64px;
 }
 
 .section.home-loans-highlight > div:nth-child(2) div {
@@ -595,11 +600,21 @@ main {
     border-bottom: none;
   }
   
-  .section.home-loans-highlight > div:nth-child(2) .icon {
+  .section.home-loans-highlight .icon {
     width: 64px;
     height: 64px;
     margin-bottom: 100px;
     padding-left: 10px;
+  }
+
+  .section.home-loans-highlight .icon img{
+    width: 64px;
+    height: 64px;
+  }
+
+  .section.home-loans-highlight > div:nth-child(2) .icon img {
+    width: 64px;
+    height: 64px;
   }
 
   .section.home-loans-highlight > div:nth-child(2) div div p {

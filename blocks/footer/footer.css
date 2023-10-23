@@ -77,7 +77,7 @@ footer .columns + div {
   display:flex;
 }
 
-footer .icon {
+footer .icon img {
   height: 22px;
   width: 22px;
 }
