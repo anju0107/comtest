@@ -22,7 +22,8 @@ export default async function decorate(block) {
     decorateIcons(footer);
     block.append(footer);
   }
-  ( function (d, komm) {
+  // eslint-disable-next-line func-names
+  (function (d, komm) {
     const kommunicateSettings = {
       appId: '1482105436ad330999fedb7b66ea215b8',
       popupWidget: true,
@@ -37,7 +38,7 @@ export default async function decorate(block) {
     window.kommunicate = komm;
     /* eslint no-underscore-dangle: 0 */
     komm._globals = kommunicateSettings;
-  })(document, window.kommunicate || {});
+  }(document, window.kommunicate || {}));
 
   function setCookie(name, value, days) {
     const date = new Date();
@@ -66,5 +67,4 @@ export default async function decorate(block) {
     }
   }
   setRandomEmailCookie();
-
 }
