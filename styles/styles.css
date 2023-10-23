@@ -421,6 +421,10 @@ main {
   margin-bottom: 32px;
 }
 
+#see-all-home-loan-interest-rates-get-help {
+  text-align: center;
+}
+
 .section.home-loans-highlight {
   background-color: var(--background-color);
   color: var(--text-color);
