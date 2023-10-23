@@ -428,18 +428,19 @@ header nav .nav-tools {
     position: relative;
   }
 
-  nav.nav-open .nav-brand {
+  nav[aria-expanded="true"] .nav-brand {
     display: none;
   }
 
-  nav.nav-open button {
+  nav[aria-expanded="true"] button {
     background-color: transparent;
   }
  
-  nav.nav-open .nav-hamburger {
+  nav[aria-expanded="true"] .nav-hamburger {
     position: absolute;
     right: 16px;
     top: 16px;
+    z-index: 200;
   }
 
   header nav[aria-expanded="true"] .nav-sections {
@@ -456,28 +457,31 @@ header nav .nav-tools {
     padding: 24px;
   }
 
-  nav.nav-open a:any-link {
+  nav[aria-expanded="true"] a:any-link {
     color: white;
   }
 
 
-  nav.nav-open .nav-sections ul {
+  nav[aria-expanded="true"] .nav-sections ul {
     height: unset;
     margin-top: 24px;
   }
-  nav.nav-open .nav-sections ul>li{
+  nav[aria-expanded="true"] .nav-sections ul>li{
     line-height: 24px;
     margin-bottom: 40px;
   }
 
-  nav.nav-open .nav-sections ul a {
+  nav[aria-expanded="true"] .nav-sections ul a {
     font-weight: 400;
   }
 
-  nav.nav-open .nav-sections ul:first-child {
+  nav[aria-expanded="true"] .nav-sections ul:first-child {
     border-bottom: 1px solid white;
   }
-  nav.nav-open .nav-sections ul:last-child {
+  nav[aria-expanded="true"] .nav-sections ul:last-child {
     display: block;
   } 
+  header nav .nav-sections ul>li:hover {
+    border-bottom: 0;
+  }
 }
