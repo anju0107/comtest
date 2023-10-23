@@ -225,6 +225,10 @@ button.secondary:focus {
   color: #231f20;
 }
 
+main.nav-open {
+  overflow: hidden;
+}
+
 main input {
   font-size: 1.25rem;
   width: 100%;
@@ -610,6 +614,11 @@ main {
 }
 
 @media (min-width: 768px) {
+
+  main.nav-open {
+    overflow: visible;
+  }
+
   h2, h2 strong{
     font-size: 32px;
   }

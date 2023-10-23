@@ -18,6 +18,8 @@
 
 .cards .cards-card-image {
   line-height: 0;
+.cards .cards-card-image img {
+  max-width: unset;
 }
 
 .cards .cards-card-body > *:first-child {
