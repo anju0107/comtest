@@ -318,6 +318,11 @@
   }
 
   .six-packs-module .icon {
+    height: unset;
+    width: unset;
+  }
+
+  .six-packs-module .icon img{
     width: 64px;
     height: 64px;
   }
@@ -564,8 +569,12 @@
   .help-section > div div:nth-child(2) li {
     width: 48%;
   }
-
   .six-packs-module .icon {
+    height: unset;
+    width: unset;
+  }
+
+  .six-packs-module .icon img{
     width: 56px;
     height: 56px;
     padding: 4px;
