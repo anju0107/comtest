@@ -124,6 +124,10 @@
   height: 64px;
   width: 64px;
 }
+.why-commbank .icon img {
+  height: 64px;
+  width: 64px;
+}
 
 .why-commbank .columns-3-cols > div div {
   padding-top: 24px;
@@ -233,9 +237,16 @@
 .help-section .icon-circle,
 .help-section .icon-callus,
 .help-section .icon-branch {
+  margin-right: 16px;
   height: 64px;
   width: 64px;
-  margin-right: 16px;
+}
+
+.help-section .icon-circle img,
+.help-section .icon-callus img,
+.help-section .icon-branch img {
+  height: 64px;
+  width: 64px;
 }
 
 .help-section h3 {
@@ -282,6 +293,11 @@
 }
 
 .home-loan-links .icon {
+  height: 64px;
+  width: 64px;
+}
+
+.home-loan-links .icon img {
   height: 64px;
   width: 64px;
 }
