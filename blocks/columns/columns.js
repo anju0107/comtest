@@ -52,6 +52,31 @@ export default function decorate(block) {
     const homeLoanBody = document.body;
     homeLoanBody.classList.add('home-loan');
   }
+  if (block.classList.contains('home-loan-rates')) {
+    const featuresHeader = document.querySelectorAll('.home-loan-rates h4');
+    const featuresContent = document.querySelectorAll(
+      '.home-loan-rates > div:last-child div',
+    );
 
+    featuresHeader.forEach((header) => {
+      header.addEventListener('click', () => {
+        if (header.classList.contains('open')) {
+          featuresContent.forEach((content) => {
+            content.style.display = 'none';
+          });
+          featuresHeader.forEach((feature) => {
+            feature.classList.remove('open');
+          });
+        } else {
+          featuresContent.forEach((content) => {
+            content.style.display = 'flex';
+          });
+          featuresHeader.forEach((feature) => {
+            feature.classList.add('open');
+          });
+        }
+      });
+    });
+  }
   /* eslint-enable max-len */
 }
