@@ -913,6 +913,65 @@
   flex-direction: column;
   display: relative;
 }
+.home-loan-rates > div:last-child div {
+  padding: 32px 24px;
+  background-color: #f4f4f4;
+  display:none;
+}
+
+.home-loan-rates > div:last-child h3 {
+  font-size: 16px;
+  margin: 0 0 24px;
+  font-weight: 800;
+}
+
+.home-loan-rates > div:last-child ul {
+  margin-top: 0;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.home-loan-rates > div:last-child li {
+  margin-bottom: 8px;
+}
+
+.home-loan-rates > div:last-child ul:first-of-type {
+  min-height: 323px; 
+  margin-bottom: 24px;
+  border-bottom:1px solid #d1d1d1;
+}
+
+.home-loan-rates > div:last-child ul:nth-of-type(2) {
+  min-height: 228px;
+  border-bottom:1px solid #d1d1d1;
+  margin-bottom: 24px;
+}
+
+.home-loan-rates > div:last-child a {
+  border-bottom: 1px dashed #231f20;
+  color: #231f20;
+  text-decoration: none;
+}
+
+.home-loan-rates > div:last-child ul:last-of-type {
+  min-height:241px;
+}
+
+.home-loan-rates >div:last-child .button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.home-loan-rates > div:last-child a.button {
+  min-width: 180px;
+  background-color: transparent;
+  color: #231f20;
+  margin-top: 0;
+  border: 1px solid #706d6e;
+}
 
 .home-loan-rates > div div:nth-child(n+2)> p:first-of-type {
   margin-bottom: 42px;
@@ -1063,6 +1122,10 @@ sub {
   margin-left: 24px;
 }
 
+.home-loan-rates h4.open::after {
+  transform: rotate(-45deg);
+}
+
 .home-loan-rates h2+p strong {
   display: grid;
   grid-template-columns: 7fr 1fr;
@@ -1146,4 +1209,15 @@ sub {
     margin-bottom: 38px;
   }
 
+  .home-loan-rates > div:last-child ul:first-of-type {
+    min-height: 395px; 
+  }
+  
+  .home-loan-rates > div:last-child ul:nth-of-type(2) {
+    min-height: 276px;
+  }
+  
+  .home-loan-rates > div:last-child ul:last-of-type {
+    min-height: 313px;
+  }
 }
