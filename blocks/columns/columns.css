@@ -339,6 +339,10 @@
   align-items: start;
 }
 
+.application-columns div:last-child {
+  align-items: start;
+}
+
 .application-columns div div h3 {
   font-size: 20px;
   line-height: 28px;
@@ -401,6 +405,101 @@
 
 .two-column div div a {
   color: #1175b5;
+}
+
+.home-loan-selector-rates {
+  padding: 0 64px;
+}
+
+.home-loan-selector-rates div.default-content-wrapper h2 {
+  margin-top: 0;
+  padding-top: 64px;
+  border-top: 1px solid #e9e9e9;
+}
+
+.section.home-loan-selector-rates.columns-container > div.default-content-wrapper > p {
+  font-size: 1rem;
+  max-width: 60%;
+}
+
+.section.home-loan-selector-rates.columns-container > div.default-content-wrapper > p > a {
+  color: #1175b5;
+}
+
+.section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div {
+  align-items: flex-start;
+}
+
+.section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div > div:not(:last-child) {
+  display: grid;
+  grid-auto-columns: 50%;
+}
+
+.section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div > div > p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div > div:not(:last-child) > p:not(:first-child) {
+  margin-top: 0;
+}
+
+.section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div > div:not(:last-child) > p:not(:first-child) a {
+  width: 100%;
+  border-radius: 0;
+  font-size: 1rem;
+}
+
+.section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div > div > p:nth-child(1) {
+  margin-bottom: 0;
+}
+
+.section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div > div:not(:last-child) > p:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div > div:not(:last-child) > p:nth-child(3) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div > div:not(:last-child) > p:nth-child(2) a {
+  color: black;
+  border: 2px solid black;
+  box-sizing: border-box !important;
+  height: 46px;
+}
+
+.section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div > div:not(:last-child) > p:nth-child(3) a {
+  background-color: #e9e9e9;
+  border: none;
+}
+
+.section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div > div:nth-child(3) > p:nth-child(2) {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #d3d2d2;
+  box-sizing: border-box;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.section.home-loan-application.columns-container > div > div {
+  padding-bottom: 0;
+}
+
+.section.home-loan-application.columns-container > div > div > div {
+  padding-bottom: 64px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.section.image-column.image-column-right.columns-container {
+  border-top: 1px solid #e9e9e9;
+}
+
+.section.image-column.image-column-right.columns-container > div {
+  padding-top: 24px;
 }
 
 @media (max-width: 768px) {
@@ -536,7 +635,25 @@
     width: 100%;
   }
 
+  body > main > div:nth-child(5) {
+    padding: 0 24px;
+  }
+  
+  body > main > div:nth-child(5) div p {
+    max-width: 100% !important;
+  }
 
+  .section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div > div > p:nth-child(1) {
+    font-size: 16px;
+  }
+
+  .section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div > div {
+    width: 100%;
+  }
+
+  .section.home-loan-selector-rates.columns-container > div:nth-child(2) > div > div > div > p:nth-child(1) {
+    font-size: 16px;
+  }
 }
 
 /* DESKTOP STYLES */
@@ -773,4 +890,260 @@
   .image-column.image-column-left .columns-img-col {
     margin-left: -128px;
   }
+}
+
+/* HOME LOAN RATES CALCULATOR */
+.home-loan-rates {
+  margin: 32px 0 0;
+  padding-bottom: 64px;
+}
+
+.home-loan-rates > div {
+  gap: 16; 
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+.home-loan-rates > div div  {
+  box-shadow: 0 0 3px 0 rgba(0 0 0/ 35%);
+  max-width: 32%;
+  padding: 16px 24px 0;
+  display: flex;
+  flex-direction: column;
+  display: relative;
+}
+
+.home-loan-rates > div div:nth-child(n+2)> p:first-of-type {
+  margin-bottom: 42px;
+}
+
+.home-loan-rates h2 {
+  font-size: 32px;
+}
+
+.home-loan-rates p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.home-loan-rates a {
+  color: #1175b5;
+}
+
+.home-loan-rates a:hover {
+  text-decoration: none;
+}
+
+.home-loan-rates table {
+  padding-bottom: 32px;
+  border-bottom: 2px solid #f4f4f4;
+  margin: 24px 0;
+}
+
+.home-loan-rates tbody a {
+  color: black;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  padding-bottom: 16px;
+}
+
+.home-loan-rates tbody tr:first-child td {
+  font-size: 16px;
+}
+
+.home-loan-rates tbody tr:last-child td {
+  font-size: 32px;
+  font-weight: 800;
+  position: relative;
+}
+
+.home-loan-rates tbody tr td:first-child {
+  padding-right: 16px;
+  border-right: 1px solid #f4f4f4;
+  width: 50%;
+}
+
+.home-loan-rates tbody tr td:last-child {
+  padding-left: 16px;
+  text-align: right;
+}
+
+sup {
+  font-size: 14px;
+}
+
+sub {
+  font-size: 16px;
+}
+
+.home-loan-rates tbody tr:last-child td:first-child sub {
+  position: absolute;
+  left: 67px;
+  top: 19px;
+}
+
+.home-loan-rates tbody tr:last-child td:last-child{
+  padding-right: 16px;
+}
+
+.home-loan-rates tbody tr:last-child td:last-child sub {
+  position: absolute;
+  right: -2px;
+  top: 19px;
+}
+
+.home-loan-rates strong {
+  font-size: 20px;
+  padding-top: 16px;
+  margin-bottom: 24px;
+}
+
+.home-loan-rates h3 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.home-loan-rates h3 em {
+  color: #1175b5;
+  font-style: normal;
+  font-size: 16px;
+  padding-left: 12px;
+  display: inline-flex;
+}
+
+.home-loan-rates h3 em::after {
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	vertical-align: top;
+	width: 0.45em;
+  top: 0;
+	transform: rotate(135deg);
+  color: black;
+  margin-left: 24px;
+}
+
+.home-loan-rates table + p {
+  margin-bottom: 24px;
+}
+
+.home-loan-rates h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-top: 2px solid #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
+  margin: 0 -24px;
+}
+
+.home-loan-rates h4::after {
+  border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	vertical-align: top;
+	width: 0.45em;
+  top: 0;
+	transform: rotate(135deg);
+  color: black;
+  margin-left: 24px;
+}
+
+.home-loan-rates h2+p strong {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  padding: 0
+}
+
+.home-loan-rates h2+p em {
+  font-style: normal;
+  border-right: 1px solid #f4f4f4;
+  white-space: nowrap;
+  overflow:hidden;
+
+}
+
+.home-loan-rates h2+p {
+  border: 1px solid #f4f4f4;
+  max-width: 100%;
+  width: 100%;
+  padding: 12px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.home-loan-rates h2+p strong::after {
+  font-size: 16px;
+  border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	width: 0.45em;
+	transform: rotate(135deg);
+  color: black;
+  margin-left: 24px;
+  position: relative;
+  right: 8px;
+  top: 4px;
+}
+
+.home-loan-rates > div div h2+table tbody tr:last-child td:last-child {
+  padding: 0;
+  display: flex;
+  font-weight: 400;
+}
+
+.home-loan-rates > div div h2+table tr:last-child td {
+  font-size: unset;
+} 
+
+@media (max-width: 768px) {
+  .home-loan-rates {
+    padding: 0;
+    overflow: scroll;
+    position: relative;
+    width: 113%;
+  }
+  .home-loan-rates > div {
+    margin-left: 8px;
+    flex-flow: row nowrap;
+    gap: 16px;
+  }
+  .home-loan-rates > div div {
+    flex: 0 0 82%;
+    margin-right: 16px;
+    max-width: 82%;
+    box-sizing: border-box;
+  }
+
+  .home-loan-rates > div div:nth-child(n+2) h2 {
+    margin-bottom: 58px;
+  }
+
+  .home-loan-rates > div div:nth-child(n+2) > p:first-of-type {
+    margin-bottom: 61px;
+  }
+
+  .home-loan-rates > div div:nth-child(3) > p:first-of-type {
+    margin-bottom: 38px;
+  }
+
 }
