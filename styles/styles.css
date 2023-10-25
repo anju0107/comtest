@@ -398,6 +398,11 @@ main {
   margin-right: -8px;
 }
 
+main div:nth-child(12) div div {
+  border-bottom: none;
+  padding-bottom: 48px;
+}
+
 /* text-cta */
 .section.text-cta {
   padding: 0 24px;
@@ -422,6 +427,31 @@ main {
   margin-bottom: 32px;
 }
 
+.section.text-cta-home-loans {
+  padding: 30px 0;
+}
+
+.section.text-cta-home-loans div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.section.text-cta-home-loans div h3 {
+  height: 40px;
+  line-height: 100%;
+}
+
+.section.home-loans-highlight a {
+  color: var(--link-color) !important;
+}
+
+.section.text-cta-home-loans div p strong a {
+  font-size: 1rem;
+  padding: 0 36px;
+}
+
 #see-all-home-loan-interest-rates-get-help {
   text-align: center;
 }
@@ -431,16 +461,25 @@ main {
   color: var(--text-color);
 }
 
-.section.home-loans-highlight a {
-  color: var(--link-color) !important;
-}
-
 .section.home-loans-highlight a:hover {
   text-decoration: none;
 }
 
 .section.home-loans-highlight #things-you-should-know {
   display: flex;
+}
+
+.section.home-loans-highlight > div:nth-child(2) div {
+  border-right: 1px solid #e9e9e9;
+}
+
+.section.home-loans-highlight > div:nth-child(2) div div {
+  margin: 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: start;
+  max-height: 240px;
+  max-width: 100%;
 }
 
 .section.home-loans-highlight .columns-wrapper:last-child > div > div {
@@ -457,19 +496,26 @@ main {
   font-weight: 800;
 }
 
-.section.home-loans-highlight > div:nth-child(2) div div {
-  margin: 0;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: start;
-  max-height: 240px;
-  max-width: 100%;
-}
-
 .section.home-loans-highlight > div:nth-child(2) div div p {
   margin: 0;
   max-width: 174px;
   padding: 8px 16px 8px 24px;
+}
+
+.section.home-loans-highlight .icon img {
+  width: 64px;
+  height: 64px;
+}
+
+.section.home-loans-highlight > div:nth-child(2) p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.section.home-loans-highlight > div:nth-child(2) p:last-child {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 .section.home-loans-highlight > div:nth-child(2) div div p:first-child {
@@ -482,28 +528,8 @@ main {
   margin-bottom: 134px;
 }
 
-.section.home-loans-highlight .icon img {
-  width: 64px;
-  height: 64px;
-}
-
-.section.home-loans-highlight > div:nth-child(2) div {
-  border-right: 1px solid #e9e9e9;
-}
-
 .section.home-loans-highlight > div:nth-child(2) div:last-child {
   border-right: none;
-}
-
-.section.home-loans-highlight > div:nth-child(2) p:last-child {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-}
-
-.section.home-loans-highlight > div:nth-child(2) p:nth-child(2) {
-  font-size: 20px;
-  font-weight: 800;
 }
 
 .section.highlight .columns-wrapper:last-child .columns > div > div:last-child a {
@@ -574,40 +600,37 @@ main {
   padding: 32px 24px;
 }
 
-.section.home-loans-highlight .columns-wrapper:last-child {
-  border-top: 1px solid #e9e9e9;
-}
-
-main div:nth-child(12) div div {
-  border-bottom: none;
-  padding-bottom: 48px;
-}
-
-.section.text-cta-home-loans {
-  padding: 30px 0;
-}
-
-.section.text-cta-home-loans div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-
-.section.text-cta-home-loans div h3 {
-  height: 40px;
-  line-height: 100%;
-}
-
-.section.text-cta-home-loans div p strong a {
-  font-size: 1rem;
-  padding: 0 36px;
-}
-
 @media (max-width: 769px) {
   .section.home-loans-highlight #were-here-to-help {
-    padding-top: 0px;
+    padding-top: 0;
     font-size: 24px;
+  }
+
+  main div:nth-child(12) div div {
+    border-bottom: none;
+    padding-bottom: 4px;
+  }
+
+  .section.text-cta-home-loans div {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 24px;
+  }
+
+  .section.text-cta-home-loans h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .section.text-cta-home-loans p strong a {
+    width: 100%;
+  }
+
+  .section.home-loans-highlight > div:nth-child(2) div {
+    border-right: none;
+    border-bottom: 1px solid #e9e9e9;
   }
 
   .section.home-loans-highlight > div:nth-child(2) div div {
@@ -622,11 +645,6 @@ main div:nth-child(12) div div {
     max-height: 200px;
     padding-top: 16px;
     padding-bottom: 16px;
-  }
-
-  .section.home-loans-highlight > div:nth-child(2) div {
-    border-right: none;
-    border-bottom: 1px solid #e9e9e9;
   }
 
   .section.home-loans-highlight > div:nth-child(2) div:last-child {
@@ -659,38 +677,15 @@ main div:nth-child(12) div div {
   .section.home-loans-highlight .columns-wrapper:nth-child(2){
     padding-bottom: 0 !important;
   }
-
-  main div:nth-child(12) div div {
-    border-bottom: none;
-    padding-bottom: 4px;
-  }
   
   #get-the-home-loans-key-facts-sheet {
     padding-bottom: 36px;
     border-bottom: 1px solid #e9e9e9;
     margin-bottom: 0;
   }
-
-  .section.text-cta-home-loans div {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin: 0 24px;
-  }
-
-  .section.text-cta-home-loans h3 {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .section.text-cta-home-loans p strong a {
-    width: 100%;
-  }
 }
 
 @media (min-width: 768px) {
-
   main.nav-open {
     overflow: visible;
   }
