@@ -183,7 +183,7 @@ button {
   font-style: normal;
   font-weight: 400;
   cursor: pointer;
-  color: #706d6e;
+  color: #231f20;
   background-color: white;
   margin: 16px 0;
   white-space: nowrap;
@@ -199,6 +199,7 @@ a.button:focus,
 button:hover,
 button:focus {
   border:1px solid #d3d2d2;
+  color: #4f4c4d;
   cursor: pointer;
 }
 
@@ -368,7 +369,7 @@ main {
 .section.hero-banner .default-content-wrapper {
   max-width: 1488px;
   margin: auto;
-  margin-left: -8px;
+  margin: 0 -8px;
 }
 
 .section.hero-banner .default-content-wrapper > p{
@@ -532,6 +533,11 @@ main div:nth-child(12) div div {
   border-right: none;
 }
 
+.section.text-wrapper.home-loans-text-wrapper > div > p:nth-child(3) > a {
+  line-height: 46px;
+  font-size: 0.95rem;
+}
+
 .section.highlight .columns-wrapper:last-child .columns > div > div:last-child a {
   color: white;
 }
@@ -555,7 +561,7 @@ main div:nth-child(12) div div {
   max-height: 600px;
   margin: auto;
   margin-right: -16px;
-  width: 100vw;
+  width: 100%;
   position:absolute;
   z-index: -1;
   background-color: #f4f4f4;
@@ -565,6 +571,10 @@ main div:nth-child(12) div div {
 .section.cards-container, .section.text-cta, .section.card-section {
   max-width: 1200px;
   margin: auto;
+}
+
+.section.highlight.home-loans-highlight.columns-container > div:nth-child(3) {
+  border-top: 1px solid #e9e9e9;
 }
 
 .section.highlight h2 {
