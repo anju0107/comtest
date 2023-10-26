@@ -56,6 +56,10 @@
   width: 64px;
 }
 
+.columns > div > .columns-img-col img {
+  display: block;
+}
+
 .home-loan-rates .icon.icon-star img {
   position: absolute;
   z-index: 5;
@@ -63,10 +67,6 @@
   top: 8px;
   width: 20px;
   height: 20px;
-}
-
-.columns > div > .columns-img-col img {
-  display: block;
 }
 
 @media (min-width: 900px) {
