@@ -56,6 +56,15 @@
   width: 64px;
 }
 
+.home-loan-rates .icon.icon-star img {
+  position: absolute;
+  z-index: 5;
+  right: 12px;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+}
+
 .columns > div > .columns-img-col img {
   display: block;
 }
@@ -1029,14 +1038,7 @@
 .home-loan-rates .icon.icon-star {
   position: static;
 }
-.home-loan-rates .icon-star img {
-  position: absolute;
-  z-index: 5;
-  right: 12px;
-  top: 8px;
-  width: 21px;
-  height: 21px;
-}
+
 .home-loan-rates .icon-star::after {
   border-color: #1175b5 #1175b5 transparent transparent;
   border-style: solid;
