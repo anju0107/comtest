@@ -27,7 +27,7 @@ export default async function decorate(block) {
     const path = window.location.pathname;
     const page = path.split('/').pop();
     const appId1 = '1482105436ad330999fedb7b66ea215b8';
-    if (page === 'home-loan') {
+    if (page === 'home-loans') {
       // eslint-disable-next-line no-const-assign
       appId1 = '2c34670d00ccce92b195d47a29f2465bf';
     }
