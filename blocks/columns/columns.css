@@ -465,7 +465,7 @@
 }
 
 .home-loan-rates h2+p {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #d3d2d2;;
   max-width: 100%;
   width: 100%;
   padding: 12px;
@@ -1205,7 +1205,7 @@ sub {
 
 .home-loan-rates h2+p em {
   font-style: normal;
-  border-right: 1px solid #f4f4f4;
+  border-right: 1px solid #d3d2d2;
   white-space: nowrap;
   overflow:hidden;
 
