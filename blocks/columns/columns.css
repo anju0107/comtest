@@ -60,6 +60,15 @@
   display: block;
 }
 
+.home-loan-rates .icon.icon-star img {
+  position: absolute;
+  z-index: 5;
+  right: 12px;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+}
+
 @media (min-width: 900px) {
   .columns > div {
     align-items: top;
@@ -90,6 +99,7 @@
   padding: 16px 24px 0;
   display: flex;
   flex-direction: column;
+  position:relative;
 }
 
 .home-loan-links .columns-8-cols > div {
@@ -1006,6 +1016,7 @@
 
   .image-column.image-column-left .columns-img-col {
     margin-left: -128px;
+    padding-top: 0;
   }
 }
 
@@ -1013,6 +1024,29 @@
 .home-loan-rates {
   margin: 32px 0 0;
   padding-bottom: 64px;
+}
+
+.home-loan-rates h2#star {
+  height: 72px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 72px;
+  margin: 0;
+}
+
+.home-loan-rates .icon.icon-star {
+  position: static;
+}
+
+.home-loan-rates .icon-star::after {
+  border-color: #1175b5 #1175b5 transparent transparent;
+  border-style: solid;
+  border-width: 36px;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .home-loan-rates > div:last-child h3 {
