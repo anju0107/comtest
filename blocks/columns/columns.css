@@ -545,6 +545,13 @@
 
 .home-loan-rates h2 {
   font-size: 32px;
+  height: 80px;
+  padding-right: 10px;
+}
+
+.section.home-loan-selector-rates.columns-container > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(1) > p:nth-child(4) {
+  margin-top: 2em;
+  margin-bottom: 0;
 }
 
 .two-column div div h2 {
