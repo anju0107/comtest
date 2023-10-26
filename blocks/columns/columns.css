@@ -414,7 +414,10 @@
 
 .home-loan-links {
   box-shadow: 0 0 3px 0 rgba(0 0 0/20%);
-  margin-bottom: 1px;
+}
+
+.home-loan-links.columns-container {
+  position: relative;
 }
 
 .home-loan-rates strong {
@@ -796,6 +799,7 @@
 
   .columns.card-wrapper > div {
     align-items: flex-start;
+    gap: 40px;
   }
 
   .home-loan-links .columns-8-cols > div {
@@ -870,10 +874,6 @@
 
   .home-loan-links .columns-8-cols > div div:not(:last-child) {
     border-right: 1px solid #e9e9e9;
-  }
-
-  .home-loan-links {
-    border-top: 1px solid rgba(0 0 0 /20%);
   }
 
   .home-loan-links .icon {
