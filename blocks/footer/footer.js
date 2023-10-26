@@ -24,8 +24,15 @@ export default async function decorate(block) {
   }
   // eslint-disable-next-line func-names
   (function (d, komm) {
+    const path = window.location.pathname;
+    const page = path.split('/').pop();
+    const appId1 = '1482105436ad330999fedb7b66ea215b8';
+    if (page === 'home-loan') {
+      // eslint-disable-next-line no-const-assign
+      appId1 = '2c34670d00ccce92b195d47a29f2465bf';
+    }
     const kommunicateSettings = {
-      appId: '1482105436ad330999fedb7b66ea215b8',
+      appId: appId1,
       popupWidget: true,
       automaticChatOpenOnNavigation: true,
     };
