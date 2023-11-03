@@ -24,7 +24,7 @@ export default async function decorate(block) {
   }
   const url = window.location.href;
   const extension = url.split('.').pop();
-  if (extension === 'live/') {
+  if (extension === 'page/' || extension === 'page/home-loans') {
     // eslint-disable-next-line func-names
     (function (d, komm) {
       const path = window.location.href;
