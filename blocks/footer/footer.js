@@ -22,29 +22,33 @@ export default async function decorate(block) {
     decorateIcons(footer);
     block.append(footer);
   }
-  // eslint-disable-next-line func-names
-  (function (d, komm) {
-    const path = window.location.pathname;
-    const page = path.split('/').pop();
-    let appId1 = '1482105436ad330999fedb7b66ea215b8';
-    if (page === 'home-loans') {
-      appId1 = '2c34670d00ccce92b195d47a29f2465bf';
-    }
-    const kommunicateSettings = {
-      appId: appId1,
-      popupWidget: true,
-      automaticChatOpenOnNavigation: true,
-    };
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.async = true;
-    script.src = 'https://widget.kommunicate.io/v2/kommunicate.app';
-    const head = document.getElementsByTagName('head')[0];
-    head.appendChild(script);
-    window.kommunicate = komm;
-    /* eslint no-underscore-dangle: 0 */
-    komm._globals = kommunicateSettings;
-  }(document, window.kommunicate || {}));
+  const url = window.location.href;
+  const extension = url.split('.').pop();
+  if (extension === 'live/') {
+    // eslint-disable-next-line func-names
+    (function (d, komm) {
+      const path = window.location.href;
+      const page = path.split('/').pop();
+      let appId1 = '1482105436ad330999fedb7b66ea215b8';
+      if (page === 'home-loans') {
+        appId1 = '2c34670d00ccce92b195d47a29f2465bf';
+      }
+      const kommunicateSettings = {
+        appId: appId1,
+        popupWidget: true,
+        automaticChatOpenOnNavigation: true,
+      };
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = 'https://widget.kommunicate.io/v2/kommunicate.app';
+      const head = document.getElementsByTagName('head')[0];
+      head.appendChild(script);
+      window.kommunicate = komm;
+      /* eslint no-underscore-dangle: 0 */
+      komm._globals = kommunicateSettings;
+    }(document, window.kommunicate || {}));
+  }
 
   function setCookie(name, value, days) {
     const date = new Date();
