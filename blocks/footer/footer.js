@@ -24,8 +24,7 @@ export default async function decorate(block) {
   }
   const url = window.location.href;
   const extension = url.split('.').pop();
-  const page = url.split('/').pop();
-  if (extension === 'live/' && page === 'home-loans') {
+  if (extension === 'live/home-loans') {
     // eslint-disable-next-line func-names
     (function (d, komm) {
       const kommunicateSettings = {
