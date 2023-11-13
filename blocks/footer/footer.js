@@ -24,17 +24,12 @@ export default async function decorate(block) {
   }
   const url = window.location.href;
   const extension = url.split('.').pop();
-  if (extension === 'page/' || extension === 'page/home-loans') {
+  const page = url.split('/').pop();
+  if (extension === 'live/' && page === 'home-loans') {
     // eslint-disable-next-line func-names
     (function (d, komm) {
-      const path = window.location.href;
-      const page = path.split('/').pop();
-      let appId1 = '1482105436ad330999fedb7b66ea215b8';
-      if (page === 'home-loans') {
-        appId1 = '2c34670d00ccce92b195d47a29f2465bf';
-      }
       const kommunicateSettings = {
-        appId: appId1,
+        appId: '2c34670d00ccce92b195d47a29f2465bf',
         popupWidget: true,
         automaticChatOpenOnNavigation: true,
       };
